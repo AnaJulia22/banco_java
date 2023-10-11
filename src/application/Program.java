@@ -1,18 +1,19 @@
 package application;
 
 import java.util.Locale;
+
 import java.util.Scanner;
 
-import entities.account;
+import entities.Account;
 
-public class program {
+public class Program {
 
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);		
-		account account;
+		Account account;
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		
 		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
@@ -26,9 +27,9 @@ public class program {
 		if (response == 'y') {
 			System.out.println("Enter initial deposit value: ");
 			double initialDeposit = sc.nextDouble();
-			account = new account(number, holder, initialDeposit);
+			account = new Account(number, holder, initialDeposit);
 		} else {
-			account = new account(number, holder);
+			account = new Account(number, holder);
 		}
 		
 		System.out.println();

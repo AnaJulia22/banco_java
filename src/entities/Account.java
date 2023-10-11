@@ -1,18 +1,21 @@
 package entities;
 
-public class account {
+public class Account {
 	
-		private int number;
+		private Integer number;
 		private String holder;
-		private double balance;
+		private Double balance;
 		
-		public account(int number, String holder) {
+		public Account() {
+		}
+		
+		public Account(int number, String holder) {
 			
 			this.number = number;
 			this.holder = holder;
 		}
 
-		public account(int number, String holder, double initialDeposit) {
+		public Account(int number, String holder, double initialDeposit) {
 
 			this.number = number;
 			this.holder = holder;
