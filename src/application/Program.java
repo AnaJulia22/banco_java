@@ -15,12 +15,16 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in); 
 		
-		Account acc = new Account(1011, "Ana", 1000.0);
+		Account acc = new Account(1001, "Ana", 1000.0);
 		acc.withdraw(200);
 		System.out.println(acc.getBalance());
 		Account acc2 = new SavingsAccount(1002, "Bia", 1000, 0.01);
 		acc2.withdraw(200);
 		System.out.println(acc2.getBalance());
+		Account acc3 = new BusinessAccount(1003, "Bobby", 1000.0, 500.0);
+		acc3.withdraw(200);
+		System.out.println(acc3.getBalance());
+		
 		/*
 		 * BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
 		 * 
