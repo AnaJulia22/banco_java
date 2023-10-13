@@ -1,15 +1,18 @@
 package application;
 
 import java.util.Locale;
+
 import java.util.Scanner;
 
 import entities.Account;
 import entities.BusinessAccount;
 import entities.SavingsAccount;
 
-public class Program {
+public class Program{
+	
 
 	public static void main(String[] args) {
+		
 		
 		Locale.setDefault(Locale.US);		
 		
@@ -26,7 +29,7 @@ public class Program {
 		System.out.println(acc3.getBalance());
 		
 		
-		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
+		//BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
 
 		/*
 		 * // UPCASTING
